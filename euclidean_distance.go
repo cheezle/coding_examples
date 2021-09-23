@@ -19,6 +19,7 @@ func getShortTestLine(a []Point) (Point, Point) {
 	len := len(a)
 	min := 0.0
 	var cord1, cord2 Point
+
 	for i := 0; i < len; i++ {
 		for j := i+1; j < len; j++ {
 			d := getDistance(a[i], a[j])
